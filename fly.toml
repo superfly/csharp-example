@@ -1,0 +1,13 @@
+app = "csharp-example"
+
+[[services]]
+  handlers = ["HTTP"]
+  internal_port = 8080
+  port = 80
+  protocol = "TCP"
+
+[[services]]
+  handlers = ["TLS","HTTP"]
+  internal_port = 8080
+  port = 443
+  protocol = "TCP"
